@@ -1,0 +1,3745 @@
+#include "main.h"
+
+#include "p33FJ64GP802.h"
+
+#define DATA_HI(){LATBbits.LATB3=1;}
+#define DATA_LOW(){LATBbits.LATB3=0;}
+
+
+void SendDat(char dat){
+  asm("disi #382");
+    DATA_HI();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    if(dat>>7&0x01){
+        DATA_HI();
+    }
+    else{
+        DATA_LOW();
+    }
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_LOW();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_HI();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    if(dat>>6&0x01){
+        DATA_HI();
+    }
+    else{
+        DATA_LOW();
+    }
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_LOW();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_HI();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    if(dat>>5&0x01){
+        DATA_HI();
+    }
+    else{
+        DATA_LOW();
+    }
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_LOW();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_HI();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    if(dat>>4&0x01){
+        DATA_HI();
+    }
+    else{
+        DATA_LOW();
+    }
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_LOW();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_HI();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    if(dat>>3&0x01){
+        DATA_HI();
+    }
+    else{
+        DATA_LOW();
+    }
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_LOW();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_HI();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    if(dat>>2&0x01){
+        DATA_HI();
+    }
+    else{
+        DATA_LOW();
+    }
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_LOW();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_HI();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    if(dat>>1&0x01){
+        DATA_HI();
+    }
+    else{
+        DATA_LOW();
+    }
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_LOW();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_HI();
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    if(dat>>0&0x01){
+        DATA_HI();
+    }
+    else{
+        DATA_LOW();
+    }
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    DATA_LOW();
+}
+
+void SendData(void){
+#if(LEDs > 0)
+SendDat(G[0]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[0]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[0]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 1)
+SendDat(G[1]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[1]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[1]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 2)
+SendDat(G[2]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[2]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[2]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 3)
+SendDat(G[3]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[3]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[3]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 4)
+SendDat(G[4]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[4]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[4]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 5)
+SendDat(G[5]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[5]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[5]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 6)
+SendDat(G[6]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[6]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[6]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 7)
+SendDat(G[7]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[7]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[7]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 8)
+SendDat(G[8]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[8]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[8]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 9)
+SendDat(G[9]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[9]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[9]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 10)
+SendDat(G[10]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[10]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[10]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 11)
+SendDat(G[11]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[11]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[11]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 12)
+SendDat(G[12]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[12]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[12]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 13)
+SendDat(G[13]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[13]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[13]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 14)
+SendDat(G[14]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[14]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[14]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 15)
+SendDat(G[15]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[15]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[15]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 16)
+SendDat(G[16]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[16]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[16]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 17)
+SendDat(G[17]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[17]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[17]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 18)
+SendDat(G[18]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[18]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[18]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 19)
+SendDat(G[19]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[19]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[19]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 20)
+SendDat(G[20]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[20]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[20]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 21)
+SendDat(G[21]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[21]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[21]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 22)
+SendDat(G[22]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[22]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[22]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 23)
+SendDat(G[23]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[23]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[23]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 24)
+SendDat(G[24]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[24]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[24]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 25)
+SendDat(G[25]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[25]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[25]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 26)
+SendDat(G[26]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[26]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[26]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 27)
+SendDat(G[27]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[27]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[27]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 28)
+SendDat(G[28]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[28]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[28]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 29)
+SendDat(G[29]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[29]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[29]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 30)
+SendDat(G[30]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[30]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[30]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 31)
+SendDat(G[31]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[31]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[31]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 32)
+SendDat(G[32]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[32]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[32]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 33)
+SendDat(G[33]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[33]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[33]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 34)
+SendDat(G[34]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[34]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[34]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 35)
+SendDat(G[35]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[35]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[35]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 36)
+SendDat(G[36]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[36]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[36]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 37)
+SendDat(G[37]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[37]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[37]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 38)
+SendDat(G[38]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[38]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[38]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 39)
+SendDat(G[39]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[39]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[39]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 40)
+SendDat(G[40]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[40]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[40]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 41)
+SendDat(G[41]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[41]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[41]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 42)
+SendDat(G[42]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[42]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[42]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 43)
+SendDat(G[43]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[43]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[43]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 44)
+SendDat(G[44]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[44]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[44]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 45)
+SendDat(G[45]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[45]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[45]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 46)
+SendDat(G[46]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[46]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[46]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 47)
+SendDat(G[47]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[47]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[47]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 48)
+SendDat(G[48]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[48]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[48]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 49)
+SendDat(G[49]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[49]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[49]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 50)
+SendDat(G[50]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[50]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[50]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 51)
+SendDat(G[51]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[51]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[51]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 52)
+SendDat(G[52]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[52]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[52]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 53)
+SendDat(G[53]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[53]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[53]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 54)
+SendDat(G[54]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[54]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[54]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 55)
+SendDat(G[55]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[55]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[55]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 56)
+SendDat(G[56]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[56]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[56]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 57)
+SendDat(G[57]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[57]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[57]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 58)
+SendDat(G[58]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[58]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[58]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 59)
+SendDat(G[59]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[59]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[59]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 60)
+SendDat(G[60]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[60]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[60]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 61)
+SendDat(G[61]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[61]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[61]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 62)
+SendDat(G[62]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[62]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[62]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 63)
+SendDat(G[63]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[63]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[63]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 64)
+SendDat(G[64]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[64]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[64]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 65)
+SendDat(G[65]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[65]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[65]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 66)
+SendDat(G[66]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[66]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[66]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 67)
+SendDat(G[67]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[67]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[67]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 68)
+SendDat(G[68]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[68]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[68]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 69)
+SendDat(G[69]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[69]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[69]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 70)
+SendDat(G[70]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[70]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[70]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 71)
+SendDat(G[71]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[71]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[71]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 72)
+SendDat(G[72]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[72]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[72]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 73)
+SendDat(G[73]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[73]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[73]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 74)
+SendDat(G[74]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[74]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[74]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 75)
+SendDat(G[75]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[75]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[75]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 76)
+SendDat(G[76]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[76]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[76]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 77)
+SendDat(G[77]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[77]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[77]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 78)
+SendDat(G[78]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[78]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[78]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 79)
+SendDat(G[79]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[79]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[79]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 80)
+SendDat(G[80]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[80]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[80]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 81)
+SendDat(G[81]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[81]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[81]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 82)
+SendDat(G[82]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[82]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[82]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 83)
+SendDat(G[83]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[83]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[83]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 84)
+SendDat(G[84]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[84]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[84]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 85)
+SendDat(G[85]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[85]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[85]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 86)
+SendDat(G[86]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[86]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[86]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 87)
+SendDat(G[87]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[87]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[87]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 88)
+SendDat(G[88]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[88]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[88]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 89)
+SendDat(G[89]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[89]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[89]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 90)
+SendDat(G[90]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[90]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[90]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 91)
+SendDat(G[91]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[91]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[91]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 92)
+SendDat(G[92]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[92]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[92]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 93)
+SendDat(G[93]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[93]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[93]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 94)
+SendDat(G[94]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[94]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[94]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 95)
+SendDat(G[95]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[95]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[95]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 96)
+SendDat(G[96]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[96]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[96]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 97)
+SendDat(G[97]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[97]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[97]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 98)
+SendDat(G[98]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[98]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[98]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 99)
+SendDat(G[99]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[99]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[99]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 100)
+SendDat(G[100]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[100]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[100]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 101)
+SendDat(G[101]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[101]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[101]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 102)
+SendDat(G[102]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[102]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[102]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 103)
+SendDat(G[103]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[103]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[103]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 104)
+SendDat(G[104]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[104]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[104]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 105)
+SendDat(G[105]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[105]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[105]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 106)
+SendDat(G[106]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[106]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[106]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 107)
+SendDat(G[107]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[107]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[107]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 108)
+SendDat(G[108]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[108]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[108]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 109)
+SendDat(G[109]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[109]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[109]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 110)
+SendDat(G[110]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[110]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[110]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 111)
+SendDat(G[111]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[111]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[111]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 112)
+SendDat(G[112]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[112]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[112]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 113)
+SendDat(G[113]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[113]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[113]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 114)
+SendDat(G[114]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[114]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[114]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 115)
+SendDat(G[115]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[115]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[115]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 116)
+SendDat(G[116]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[116]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[116]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 117)
+SendDat(G[117]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[117]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[117]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 118)
+SendDat(G[118]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[118]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[118]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 119)
+SendDat(G[119]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[119]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[119]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 120)
+SendDat(G[120]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[120]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[120]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 121)
+SendDat(G[121]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[121]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[121]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 122)
+SendDat(G[122]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[122]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[122]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 123)
+SendDat(G[123]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[123]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[123]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 124)
+SendDat(G[124]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[124]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[124]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 125)
+SendDat(G[125]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[125]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[125]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 126)
+SendDat(G[126]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[126]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[126]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 127)
+SendDat(G[127]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[127]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[127]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 128)
+SendDat(G[128]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[128]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[128]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 129)
+SendDat(G[129]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[129]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[129]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 130)
+SendDat(G[130]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[130]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[130]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 131)
+SendDat(G[131]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[131]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[131]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 132)
+SendDat(G[132]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[132]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[132]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 133)
+SendDat(G[133]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[133]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[133]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 134)
+SendDat(G[134]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[134]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[134]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 135)
+SendDat(G[135]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[135]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[135]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 136)
+SendDat(G[136]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[136]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[136]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 137)
+SendDat(G[137]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[137]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[137]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 138)
+SendDat(G[138]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[138]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[138]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 139)
+SendDat(G[139]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[139]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[139]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 140)
+SendDat(G[140]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[140]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[140]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 141)
+SendDat(G[141]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[141]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[141]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 142)
+SendDat(G[142]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[142]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[142]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 143)
+SendDat(G[143]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[143]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[143]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 144)
+SendDat(G[144]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[144]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[144]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 145)
+SendDat(G[145]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[145]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[145]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 146)
+SendDat(G[146]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[146]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[146]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 147)
+SendDat(G[147]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[147]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[147]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 148)
+SendDat(G[148]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[148]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[148]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 149)
+SendDat(G[149]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[149]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[149]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 150)
+SendDat(G[150]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[150]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[150]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 151)
+SendDat(G[151]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[151]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[151]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 152)
+SendDat(G[152]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[152]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[152]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 153)
+SendDat(G[153]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[153]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[153]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 154)
+SendDat(G[154]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[154]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[154]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 155)
+SendDat(G[155]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[155]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[155]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 156)
+SendDat(G[156]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[156]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[156]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 157)
+SendDat(G[157]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[157]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[157]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 158)
+SendDat(G[158]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[158]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[158]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 159)
+SendDat(G[159]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[159]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[159]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 160)
+SendDat(G[160]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[160]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[160]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 161)
+SendDat(G[161]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[161]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[161]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 162)
+SendDat(G[162]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[162]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[162]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 163)
+SendDat(G[163]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[163]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[163]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 164)
+SendDat(G[164]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[164]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[164]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 165)
+SendDat(G[165]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[165]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[165]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 166)
+SendDat(G[166]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[166]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[166]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 167)
+SendDat(G[167]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[167]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[167]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 168)
+SendDat(G[168]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[168]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[168]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 169)
+SendDat(G[169]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[169]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[169]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 170)
+SendDat(G[170]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[170]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[170]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 171)
+SendDat(G[171]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[171]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[171]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 172)
+SendDat(G[172]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[172]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[172]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 173)
+SendDat(G[173]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[173]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[173]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 174)
+SendDat(G[174]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[174]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[174]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 175)
+SendDat(G[175]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[175]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[175]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 176)
+SendDat(G[176]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[176]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[176]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 177)
+SendDat(G[177]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[177]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[177]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 178)
+SendDat(G[178]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[178]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[178]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 179)
+SendDat(G[179]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[179]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[179]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 180)
+SendDat(G[180]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[180]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[180]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 181)
+SendDat(G[181]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[181]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[181]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 182)
+SendDat(G[182]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[182]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[182]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 183)
+SendDat(G[183]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[183]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[183]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 184)
+SendDat(G[184]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[184]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[184]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 185)
+SendDat(G[185]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[185]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[185]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 186)
+SendDat(G[186]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[186]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[186]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 187)
+SendDat(G[187]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[187]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[187]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 188)
+SendDat(G[188]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[188]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[188]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 189)
+SendDat(G[189]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[189]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[189]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 190)
+SendDat(G[190]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[190]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[190]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 191)
+SendDat(G[191]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[191]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[191]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 192)
+SendDat(G[192]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[192]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[192]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 193)
+SendDat(G[193]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[193]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[193]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 194)
+SendDat(G[194]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[194]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[194]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 195)
+SendDat(G[195]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[195]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[195]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 196)
+SendDat(G[196]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[196]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[196]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 197)
+SendDat(G[197]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[197]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[197]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 198)
+SendDat(G[198]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[198]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[198]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+#if(LEDs > 199)
+SendDat(G[199]);//RedData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(R[199]);//GreenData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+SendDat(B[199]);//BlueData
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+asm("nop");//wait
+#endif
+}
